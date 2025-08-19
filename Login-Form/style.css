@@ -1,0 +1,39 @@
+.form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+ 
+}
+
+.labels{
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+}
+
+.form label {
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(119, 74, 89);
+  width: 50%;
+}
+
+.form input {
+  flex: 1;
+  padding: 0.5rem;
+  background: linear-gradient(to left, #bf45e4, #e7d0d0); 
+  text-shadow: whitesmoke;
+  width: 50%;
+}
+
+.legend {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #33ac28ff;
+}
+.btn input{
+  border: 2px;
+  background: linear-gradient(to left, #ff5f6d, #683424); 
+  color: white;
+}
