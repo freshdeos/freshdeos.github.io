@@ -1,39 +1,80 @@
-.form .form-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
- 
-}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.labels{
-  height: 600px;
-  width: 600px;
-  border: 2px solid black;
-}
+    .form-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      animation: borderGlow 1s linear infinite;
+      border: 3px solid transparent;
+    }
 
-.form label {
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgb(119, 74, 89);
-  width: 50%;
-}
+    @keyframes borderGlow {
+      0% {
+        border-image: linear-gradient(45deg, #ff416c, #ff4b2b) 1;
+      }
+      25% {
+        border-image: linear-gradient(45deg, #6a11cb, #2575fc) 1;
+      }
+      50% {
+        border-image: linear-gradient(45deg, #00b09b, #96c93d) 1;
+      }
+      75% {
+        border-image: linear-gradient(45deg, #ff5f6d, #ffc371) 1;
+      }
+      100% {
+        border-image: linear-gradient(45deg, #ff416c, #ff4b2b) 1;
+      }
+    }
 
-.form input {
-  flex: 1;
-  padding: 0.5rem;
-  background: linear-gradient(to left, #bf45e4, #e7d0d0); 
-  text-shadow: whitesmoke;
-  width: 50%;
-}
+    h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
 
-.legend {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #33ac28ff;
-}
-.btn input{
-  border: 2px;
-  background: linear-gradient(to left, #ff5f6d, #683424); 
-  color: white;
-}
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      color: white;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+    }
